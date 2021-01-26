@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+}
+
+.main-left{
+    display: flex;
+    flex: 0.8;
+    background-color: black;
+    height: 100vh;
+    width: auto;
+}
+
+.main-right{
+    display: flex;
+    flex: 0.2;
+    height: auto;
+    width: auto;
+}
+.left_controls{
+    display: flex;
+    height: 7rem;
+}
+.controls-span{
+    color: white;
+}
+.controls__flex{
+    margin: 1rem 1rem;
+    padding: .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+}
+.controls__flexx{
+    margin: 1rem 1rem;
+    padding: .5rem .5rem;
+    display: flex;
+    flex-direction: column;
+    width: 5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 1rem;
+    height: 2rem;
+    color: red;
+}
+.controls__flex:hover{
+    background-color:rgb(54, 49, 49);
+}
+i{
+    font-size: 2rem;
+    color: white;
+}
+.middle_controls{
+    display: flex;
+    color: white;
+    height: 7rem;
+
+}
+span{
+    padding: .4rem 0rem;
+}
+
+.main_controls{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+.controls__flexx:hover{
+   color: rgb(238, 39, 39);
+   background-color:rgb(54, 49, 49);
+}
+.main-full{
+    width: 100vw;
+    background-color: black;
+
+}
+.main_content{
+ 
+    width: 70vw;
+    height: 30vw;
+    
+
+    position: absolute;
+margin-left: auto;
+margin-right: auto;
+margin-top: auto;
+margin-bottom: auto;
+left: 0;
+right: 300px;
+top: 0;
+bottom: 0;
+text-align: center;
+}
+.main-right{
+  
+    background-color: rgb(95, 83, 83);
+    display: flex;
+     overflow: hidden;
+    flex-direction: column;
+   
+    max-height: 48.1vw;
+    flex-direction: column;
+    flex-grow: 1;
+ overflow-y: scroll;
+ border-left: 1px solid white;
+
+}
+.main-clear{
+    display: none;
+
+}
+.headingof{
+    text-align: center;
+    color: white;
+   
+    padding: 2rem;
+    background-color: rgb(5, 0, 0);
+    border-bottom: 1px solid white;
+}
+.message-container{
+    color: white;
+
+}
+video{
+    width: 400px;
+    height: 400px;
+    margin-right: 1rem;
+}
+.messageCont{
+    position: absolute;
+    bottom: 2px;
+    display: flex;
+    flex-direction: row;
+
+}
+#message{
+    padding: 1rem;
+    background-color: black;
+    border-radius: 1rem;
+    outline: none;
+
+    /* border: none; */
+}
+.messages{
+    display: flex;
+    flex-direction: column;
+}
+input[type = text]{
+    color: white;
+}
+#submit{
+    background-color: black;
+    border-radius: .5rem;
+    padding: 3px 5px;
+    outline: none;
+    width: 3rem;
+    height: 3rem;
+    border: none;
+}
+#submit:hover{
+    color: black;
+    background-color: white;
+}
+input[type = submit]{
+    color: white;
+}
+
+li{
+    padding: .5rem;
+    list-style: none;
+    height: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 9px;
+    border-bottom: 1px solid white;
+    
+}
+
+.muteBtn{
+    display: none;
+}

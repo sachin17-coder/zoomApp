@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video call by sachin</title>
+     <link rel="stylesheet" href="/prism.css">
+    <script src="prism.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+        integrity="sha512-PgQMlq+nqFLV4ylk1gwUOgm6CtIIXkKwaIHp/PAIWHzig/lKZSEGKEysh0TCVbHJXCLN7WetD8TFecIky75ZfQ=="
+        crossorigin="anonymous" />
+    <script>
+        let ROOM_ID = "{{roomId}}"
+    </script>
+    <script src="https://unpkg.com/peerjs@1.3.1/dist/peerjs.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+   
+</head>
+
+<body>
+        
+            
+    <div class="main main-full">
+        {{!-- starting right div from here --}}
+
+        <div class="main-left">
+            <div class="main_content">
+                <div class="__mainvideos">
+                    <div id="video-grid">
+
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="main_controls">
+                <div class="left_controls">
+                    <div class="controls__flex main_mute">
+                        <i class="fas fa-microphone"></i>
+                        <span class="controls-span">mute</span>
+                    </div>
+                 
+
+
+                    <div class="controls__flex video_mute_unmute">
+                        <i class="fas fa-video"></i>
+                        <span class="controls-span">pause</span>
+                    </div>
+                </div>
+
+
+                <div class="middle_controls">
+                    <div class="controls__flex">
+                        <i class="fas fa-users"></i>
+                        <span class="controls-span">participants</span>
+                    </div>
+                    <div class="controls__flex" id="chat-button">
+                        <i class="fas fa-comment-alt"></i>
+                        <span class="controls-span">chat</span>
+                    </div>
+
+
+
+                </div>
+                <div class="right_controls">
+                    <div class="controls__flexx">
+                        <div class="leave_meeting">
+                            leave meeting
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {{!-- starting left div from here --}}
+
+        <div class="main-right main-clear">
+            <div class="headingof">
+                Messages
+            </div>
+
+            <div class="message-container">
+                <ul class="messages">
+
+                </ul>
+
+            </div>
+            <div class="messageCont">
+
+                <div class="messageValue">
+                    <input type="text" name="message" id="message" placeholder="message">
+                </div>
+                <input type="submit" value="send" id="submit">
+            </div>
+        </div>
+    <h4 style="color: red;">
+        Copy link And Share It
+    </h4>
+
+     <pre class="language-js"><code> var i = 45;  </code></pre>
+    </div>
+
+
+<script src="js/script.js"></script>
+</body>
+
+</html>
