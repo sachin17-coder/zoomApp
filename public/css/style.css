@@ -86,8 +86,6 @@ span{
  
     width: 70vw;
     height: 30vw;
-    
-
     position: absolute;
 margin-left: auto;
 margin-right: auto;
@@ -132,7 +130,7 @@ text-align: center;
 video{
     width: 400px;
     height: 400px;
-    margin-right: 1rem;
+    /* margin-right: 1rem; */
 }
 .messageCont{
     position: absolute;
@@ -185,4 +183,51 @@ li{
 
 .muteBtn{
     display: none;
+}
+
+
+@media only screen and (max-width: 400px){
+       video{
+           height: auto;
+           width: 452px;
+       }
+       video:nth-child(2){
+        height: 31rem;
+        width: 31rem;
+        margin-top: -4rem;
+       }
+
+    .main_content{
+        width: 399px;
+        height: 812px;
+    }
+    .main_controls{
+        position: absolute;
+        bottom: 0px;
+        width: 99.4vw;
+        background-color: rgb(37, 35, 35);
+        
+    }
+    i{
+        font-size: 1.4rem;
+        color: white;
+    }
+    .middle_controls{
+        display: flex;
+        color: white;    
+    }
+    span{
+        width: 2rem;
+        padding: .4rem 0rem;
+    }
+
+  .main-right {
+    position: absolute;
+    width: 24rem;
+    height: 20rem;
+    max-height: 20rem;
+    opacity: 0.9;
+ overflow-y: scroll;
+ border-left: 1px solid white;
+}
 }
